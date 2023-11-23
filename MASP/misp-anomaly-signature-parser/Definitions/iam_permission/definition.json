@@ -1,0 +1,30 @@
+{
+  "attributes": {
+      "permission-id": {
+        "description": "Identifier",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    },
+      "permission-name": {
+        "description": "Permission name",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    },
+      "description": {
+        "description": "Description of permission",
+        "disable_correlation": true,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    }
+  },
+    "description": "Object desribes an IAM permission",
+    "meta-category": "Person",
+    "name": "0_IAM_Permission",
+    "uuid": "fdd90eb3-e8b4-4759-a0a8-82253cd5d2ca",
+    "version": 3,
+    "required": [
+      "permission-id"
+    ]
+}

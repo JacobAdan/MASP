@@ -1,0 +1,27 @@
+{
+  "attributes": {
+    "uid": {
+      "description": "Identifier",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "ui-priority": 0
+  },
+    "full-name": {
+      "description": "Full name",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "ui-priority": 0
+  },
+  "application": {
+    "description": "Application",
+    "disable_correlation": false,
+    "misp-attribute": "text",
+    "ui-priority": 0
+}
+},
+  "description": "Object desribes an IAM Account",
+  "meta-category": "Other",
+  "name": "IAM_Account",
+  "uuid": "71a347a3-ad05-4eb2-b974-e3ac07971c7b",
+  "version": 1
+}

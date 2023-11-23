@@ -1,0 +1,30 @@
+{
+  "attributes": {
+      "role-id": {
+        "description": "Identifier",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    },
+      "role-name": {
+        "description": "Role name",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    },
+      "description": {
+        "description": "Description of role",
+        "disable_correlation": true,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    }
+  },
+    "description": "Object desribes an IAM role",
+    "meta-category": "Other",
+    "name": "0_IAM_Role",
+    "uuid": "fdd90eb3-e8b4-4759-a0a8-82253cd5d2ca",
+    "version": 3,
+    "required": [
+      "role-id"
+    ]
+}

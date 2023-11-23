@@ -1,0 +1,30 @@
+{
+  "attributes": {
+      "process-id": {
+        "description": "Identifier",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    },
+      "process-name": {
+        "description": "Process name",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    },
+      "description": {
+        "description": "Description of process",
+        "disable_correlation": true,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    }
+  },
+    "description": "Object desribes a process",
+    "meta-category": "Other",
+    "name": "IAM_process",
+    "uuid": "8b492ab1-8f5c-4256-8c6b-8b9137d20736",
+    "version": 3,
+    "required": [
+      "process-id"
+    ]
+}

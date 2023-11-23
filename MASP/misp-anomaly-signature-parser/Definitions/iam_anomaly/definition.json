@@ -1,0 +1,40 @@
+{
+  "attributes": {
+    "type": {
+      "description": "Anomaly type",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "sane_default": [
+          "Shared Accounts",
+          "Orphan Accounts",
+          "Excessive Permission",
+          "(Partial) Universal Access",
+          "Policy Errors",
+          "Process Errors",
+          "Privacy Leakage",
+          "Data quality"
+          ],
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Description of the anomaly",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "threat": {
+      "description": "Threats that are caused by the anomaly",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object desribes an anomaly or signature in IAM",
+  "meta-category": "Other",
+  "name": "0_IAM_Anomaly",
+  "uuid": "4d2f9e0e-a651-4ae2-a66c-84be6ea7f69a",
+  "version": 2,
+  "required": [
+    "type"
+  ]
+}

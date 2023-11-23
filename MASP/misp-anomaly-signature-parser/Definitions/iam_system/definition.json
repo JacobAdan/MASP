@@ -1,0 +1,30 @@
+{
+  "attributes": {
+      "system-id": {
+        "description": "Identifier",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    },
+      "system-name": {
+        "description": "System name",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    },
+      "description": {
+        "description": "Description of system",
+        "disable_correlation": true,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    }
+  },
+    "description": "Object desribes a system",
+    "meta-category": "Other",
+    "name": "0_IAM_System",
+    "uuid": "fdd90eb3-e8b4-4759-a0a8-82253cd5d2ca",
+    "version": 3,
+    "required": [
+      "system-id"
+    ]
+}

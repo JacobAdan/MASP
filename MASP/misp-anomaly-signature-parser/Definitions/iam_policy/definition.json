@@ -1,0 +1,27 @@
+{
+  "attributes": {
+    "policy-name": {
+        "description": "Name of policy",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+      },
+    "description": {
+        "description": "Desription of policy",
+        "disable_correlation": true,
+        "misp-attribute": "text",
+        "ui-priority": 0
+      },
+    "policy-id": {
+      "description": "Policy-Id",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describes an iam-policy",
+  "meta-category": "Other",
+  "name": "IAM_Policy",
+  "uuid": "b3f3c1d2-b324-4d2c-83e1-1f603ffb63a3",
+  "version": 1
+}

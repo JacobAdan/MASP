@@ -1,0 +1,38 @@
+{
+  "attributes": {
+    "type": {
+      "description": "Signature type",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "sane_default": [
+          "Default Accounts",
+          "Policy Errors",
+          "Dead Elements",
+          "Liveness",
+          "Mising Access Reviews",
+          "Data quality"
+          ],
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Description of the signature",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "threat": {
+      "description": "Threats that are caused by the signature",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object desribes a signature in IAM",
+  "meta-category": "Other",
+  "name": "0_IAM_Signature",
+  "uuid": "db4586f5-eb94-4322-8eb7-73718b0f320f",
+  "version": 2,
+  "required": [
+    "type"
+  ]
+}

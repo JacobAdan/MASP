@@ -1,0 +1,48 @@
+{
+  "attributes": {
+      "uid": {
+        "description": "Identifier",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    },
+      "full-name": {
+        "description": "Full name",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    },
+      "job-id": {
+        "description": "Job ID",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    },
+      "department": {
+        "description": "Department",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    },
+      "hiring-date": {
+        "description": "Hiring date",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    },
+      "termination-date": {
+        "description": "Termination date",
+        "disable_correlation": false,
+        "misp-attribute": "text",
+        "ui-priority": 0
+    }
+  },
+    "description": "Object desribes an IAM Identity",
+    "meta-category": "Person",
+    "name": "0_IAM_Identity",
+    "uuid": "fdd90eb3-e8b4-4759-a0a8-82253cd5d2ca",
+    "version": 3,
+    "required": [
+      "uid"
+    ]
+}
