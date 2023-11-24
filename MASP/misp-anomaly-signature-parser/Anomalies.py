@@ -1,12 +1,10 @@
 from pymisp import MISPObject
-import os
-definitionsPath = os.path.join("..","venv","Lib","site-packages","pymisp","data","misp-objects","objects")
+
 
 
 class Anomaly:
     def __init__(self, anomaly_type, description, threat):
-        self.obj = MISPObject(name='iam_anomaly', strict=True,
-                              misp_objects_path_custom=definitionsPath)
+        self.obj = MISPObject(name='iam_anomaly', strict=True)
         self.obj.add_attribute('type', value=anomaly_type)
         self.obj.add_attribute('description', value=description)
         self.obj.add_attribute('threat', value=threat)

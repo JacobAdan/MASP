@@ -3,7 +3,7 @@ from pymisp import MISPEvent, MISPAttribute, MISPObject
 import datetime
 import time
 import Anomalies
-definitionsPath = os.path.join("..","venv","Lib","site-packages","pymisp","data","misp-objects","objects")
+
 class Event:
     def __init__(self):
         self.e = MISPEvent()
@@ -36,8 +36,7 @@ class Event:
 
 class Identity:
     def __init__(self, uid,  fullName, jobId, dept, hiring, termination):
-        self.obj = MISPObject(name='iam_identity', strict=True,
-                              misp_objects_path_custom=definitionsPath)
+        self.obj = MISPObject(name='iam_identity', strict=True)
         self.obj.add_attribute('uid', value=uid)
         self.obj.add_attribute('full-name', value=fullName)
         self.obj.add_attribute('job-id', value=jobId)
@@ -50,19 +49,17 @@ class Identity:
 
 class Account:
     def __init__(self, uid, full_name, application):
-        self.obj = MISPObject(name='iam_account', strict=True,
-                              misp_objects_path_custom=definitionsPath)
-        self.obj.add_attribute('uid', value=uid)
-        self.obj.add_attribute('full-name', value=full_name)
-        self.obj.add_attribute('application', value=application)
+        self.obj = MISPObject(name='user-account', strict=True)
+        self.obj.add_attribute('user-id', value=uid)
+        self.obj.add_attribute('username', value=full_name)
+        self.obj.add_attribute('account-type', value=application)
 
     def getObject(self):
         return self.obj
 
 class Permission:
     def __init__(self, permission_id, permission_name, description):
-        self.obj = MISPObject(name='iam_permission', strict=True,
-                              misp_objects_path_custom=definitionsPath)
+        self.obj = MISPObject(name='iam_permission', strict=True)
         self.obj.add_attribute('permission-id', value=permission_id)
         self.obj.add_attribute('permission-name', value=permission_name)
         self.obj.add_attribute('description', value=description)
@@ -72,8 +69,7 @@ class Permission:
 
 class Role:
     def __init__(self, role_id, role_name, description):
-        self.obj = MISPObject(name='iam_role', strict=True,
-                              misp_objects_path_custom=definitionsPath)
+        self.obj = MISPObject(name='iam_role', strict=True)
         self.obj.add_attribute('role-id', value=role_id)
         self.obj.add_attribute('role-name', value=role_name)
         self.obj.add_attribute('description', value=description)
@@ -86,8 +82,7 @@ class Role:
 
 class Policy:
     def __init__(self, policy_id, policy_name, description):
-        self.obj = MISPObject(name='iam_policy', strict=True,
-                              misp_objects_path_custom=definitionsPath)
+        self.obj = MISPObject(name='iam_policy', strict=True)
         self.obj.add_attribute('policy-id', value=policy_id)
         self.obj.add_attribute('policy-name', value=policy_name)
         self.obj.add_attribute('description', value=description)
@@ -97,8 +92,7 @@ class Policy:
 
 class Process:
     def __init__(self, process_id, process_name, description):
-        self.obj = MISPObject(name='iam_process', strict=True,
-                              misp_objects_path_custom=definitionsPath)
+        self.obj = MISPObject(name='iam_process', strict=True)
         self.obj.add_attribute('process-id', value=process_id)
         self.obj.add_attribute('process-name', value=process_name)
         self.obj.add_attribute('description', value=description)
@@ -109,8 +103,7 @@ class Process:
 
 class System:
     def __init__(self, system_id, system_name, description):
-        self.obj = MISPObject(name='iam_system', strict=True,
-                              misp_objects_path_custom=definitionsPath)
+        self.obj = MISPObject(name='iam_system', strict=True)
         self.obj.add_attribute('system-id', value=system_id)
         self.obj.add_attribute('system-name', value=system_name)
         self.obj.add_attribute('description', value=description)
@@ -122,8 +115,7 @@ class System:
 
 class CourseOfAction:
         def __init__(self, name, type, description):
-            self.obj = MISPObject(name='course-of-action', strict=True,
-                                  misp_objects_path_custom=definitionsPath)
+            self.obj = MISPObject(name='course-of-action', strict=True)
             self.obj.add_attribute('name', value=name)
             self.obj.add_attribute('type', value=type)
             self.obj.add_attribute('description', value=description)
