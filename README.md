@@ -1,4 +1,4 @@
-# MASP
+# MASP - MISP Anomaly Signature Parser
 
 1. Docker Build:
 
